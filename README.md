@@ -60,7 +60,7 @@ project_root/
     ```
 
 3. Install the required Python packages:
-    install the latest version of Pytorch depending on your CUDA installation:
+    Install the latest version of Pytorch depending on your CUDA installation:
     eg: pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
     Once you install torch, then run the below command to install other dependencies.
     ```bash
