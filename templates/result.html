@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Results</h2>
+{% for title, text, classifications in results %}
+    <div>
+        <h3>{{ title }}</h3>
+        <p><strong>Submitted Text:</strong></p>
+        <p>{{ text }}</p>
+        <p><strong>Classifications:</strong></p>
+        <ul>
+            {% for label in classifications %}
+                <li>{{ loop.index }}. [{{ label }}]</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endfor %}
+<a href="{{ url_for('index') }}">Go Back</a>
+{% endblock %}

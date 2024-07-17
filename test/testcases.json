@@ -1,0 +1,14 @@
+[    
+    {
+        "prompt": "Navigate to the home page when the user logs out.",
+        "sequence_of_nodes": ["OnLogout", "Navigate"]
+    },
+    {
+        "prompt": "Fetch and display a user's notifications when the user clicks the notifications button.",
+        "sequence_of_nodes": ["OnClick", "FetchData", "Show"]
+    },
+    {
+        "prompt": "Log a message when the user changes the window size.",
+        "sequence_of_nodes": ["OnWindowResize", "Log"]
+    }
+]
