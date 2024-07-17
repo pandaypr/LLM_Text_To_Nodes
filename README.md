@@ -3,27 +3,26 @@
 This project is a Flask web application that uses a pre-trained language model to classify text inputs into known nodes. The application also includes unit tests to ensure the functionality of the models and the application itself.
 
 ## Project Structure
-'''
+<pre><code>
 project_root/
 │
-├── app.py # Main Flask application
-├── models.py # Model-related functions and loading mechanisms
-├── requirements.txt # Python dependencies
-├── Dockerfile # Docker configuration
-├── README.md # Project documentation
-├── templates/ # HTML templates
-│ ├── index.html
-│ ├── layout.html
-│ └── result.html
-├── static/ # Static files (CSS, JS)
-│ └── styles.css
-└── test/ # Unit tests
-├── App_Unit_Test.py
-├── metrics.py
-├── Models_Unit_test.py
-└── testcases.json # Test cases for unit tests
-'''
-
+├── app.py                 # Main Flask application
+├── models.py              # Model-related functions and loading mechanisms
+├── requirements.txt       # Python dependencies
+├── Dockerfile             # Docker configuration
+├── README.md              # Project documentation
+├── templates/             # HTML templates
+│   ├── index.html
+│   ├── layout.html
+│   └── result.html
+├── static/                # Static files (CSS, JS)
+│   └── styles.css
+└── test/                  # Unit tests
+    ├── App_Unit_Test.py
+    ├── metrics.py
+    ├── Models_Unit_test.py
+    └── testcases.json     # Test cases for unit tests
+</code></pre>
 
 ## Setup Instructions
 
