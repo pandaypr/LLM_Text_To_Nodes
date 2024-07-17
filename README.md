@@ -21,7 +21,8 @@ project_root/
 ├── App_Unit_Test.py
 ├── metrics.py
 ├── Models_Unit_test.py
-└── testcases.json # Test cases for unit tests'''
+└── testcases.json # Test cases for unit tests
+'''
 
 
 ## Setup Instructions
