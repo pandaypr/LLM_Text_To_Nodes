@@ -1,6 +1,15 @@
 # LLM Based Text to Node Application
 
 This project is a Flask web application that uses a pre-trained language model to classify text inputs into known nodes. The application also includes unit tests to ensure the functionality of the models and the application itself.
+The initial requirement was to use the google/codegemma-7b model or another model with approximately 7 billion parameters from Hugging Face. However, due to hardware limitations, this wasn't feasible.
+
+##Model Selection and Challenges
+The primary reason for choosing the facebook/bart-large-mnli model, which has approximately 406 million parameters, was the lack of access to a GPU capable of handling models larger models. Running inference with a 7 billion parameter model requires substantial computational resources, including a large GPU, which was not available for this project.
+
+Attempts were made to use cloud-based services, such as Hugging Face's inference API, to handle the larger model. Unfortunately, these efforts were unsuccessful due to various limitations and constraints in the cloud service.
+
+Despite these challenges, the facebook/bart-large-mnli model was selected as a suitable alternative, providing a balance between performance and computational feasibility. This model enables efficient text classification while remaining within the capabilities of the available hardware.
+
 
 ## Project Structure
 <pre><code>
