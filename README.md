@@ -3,13 +3,16 @@
 This project is a Flask web application that uses a pre-trained language model to classify text inputs into known nodes. The application also includes unit tests to ensure the functionality of the models and the application itself.
 The initial requirement was to use the google/codegemma-7b model or another model with approximately 7 billion parameters from Hugging Face. However, due to hardware limitations, this wasn't feasible.
 
-##Model Selection and Challenges
+## Model Selection and Challenges
 The primary reason for choosing the facebook/bart-large-mnli model, which has approximately 406 million parameters, was the lack of access to a GPU capable of handling models larger models. Running inference with a 7 billion parameter model requires substantial computational resources, including a large GPU, which was not available for this project.
 
 Attempts were made to use cloud-based services, such as Hugging Face's inference API, to handle the larger model. Unfortunately, these efforts were unsuccessful due to various limitations and constraints in the cloud service.
 
-Despite these challenges, the facebook/bart-large-mnli model was selected as a suitable alternative, providing a balance between performance and computational feasibility. This model enables efficient text classification while remaining within the capabilities of the available hardware.
+Additionally, efforts were made to fine-tune smaller models such as BART, T5, and GPT-2, which are around 1.5 billion parameters. However, their performance in text generation tasks was below that of the facebook/bart-large-mnli model used in this project. As a result, the facebook/bart-large-mnli model was selected as the most suitable alternative, providing a balance between performance and computational feasibility. This model enables efficient text classification while remaining within the capabilities of the available hardware.
 
+## Similarity Model and Adjustable Threshold
+
+In addition to the classification model, the application uses a similarity model based on 'all-MiniLM-L6-v2' and cosine similarity to compare the output with the expected nodes. This allows for a more flexible and accurate classification process. The threshold value for similarity can be adjusted in the app.py file, allowing users to change the amount of nodes generated based on their specific requirements.
 
 ## Project Structure
 <pre><code>
